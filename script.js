@@ -47,7 +47,10 @@
   try { saved = localStorage.getItem('jada-lang'); } catch (e) {}
   if (saved === 'es') applyLang('es');
 
-  /* ── before / after slider ── */
+  /* ── before / after slider ──
+     Pointer drag is handled on .ba directly (more reliable than an
+     invisible range input). The range input stays for keyboard users. */
+  var ba = document.getElementById('ba');
   var baRange = document.getElementById('baRange');
   var baBefore = document.querySelector('.ba-before');
   var baDivider = document.getElementById('baDivider');
@@ -58,9 +61,34 @@
     baBefore.style.clipPath = 'inset(0 ' + (100 - v) + '% 0 0)';
     baDivider.style.left = v + '%';
   }
-  if (baRange) {
-    baRange.addEventListener('input', renderBA);
+
+  function baSetFromX(clientX) {
+    var rect = ba.getBoundingClientRect();
+    var v = ((clientX - rect.left) / rect.width) * 100;
+    baRange.value = Math.max(0, Math.min(100, v));
     renderBA();
+  }
+
+  if (ba && baRange) {
+    renderBA();
+    baRange.addEventListener('input', renderBA); // arrow keys
+
+    var baDragging = false;
+    ba.addEventListener('pointerdown', function (e) {
+      baDragging = true;
+      try { ba.setPointerCapture(e.pointerId); } catch (_) {}
+      baSetFromX(e.clientX);
+      e.preventDefault();
+    });
+    ba.addEventListener('pointermove', function (e) {
+      if (baDragging) baSetFromX(e.clientX);
+    });
+    function baEnd(e) {
+      baDragging = false;
+      try { ba.releasePointerCapture(e.pointerId); } catch (_) {}
+    }
+    ba.addEventListener('pointerup', baEnd);
+    ba.addEventListener('pointercancel', baEnd);
   }
 
   /* ── financing calculator ── */
