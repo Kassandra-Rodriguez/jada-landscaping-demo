@@ -216,13 +216,42 @@ body.es .lang-toggle .lang-off{background:var(--navy);color:#fff}
 .svc h3{font-size:1rem;font-weight:800;line-height:1.3}
 .svc-note{margin-top:20px;font-size:.9rem;color:var(--slate);text-align:center}
 
-/* ── gallery ── */
-.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.shot{margin:0;border-radius:var(--r);position:relative;overflow:hidden;box-shadow:var(--shadow-sm);aspect-ratio:3/4}
-.shot-wide{grid-column:span 2;aspect-ratio:3/2}
-.shot img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
-.shot::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 52%,rgba(4,52,95,.8))}
-.shot figcaption{position:absolute;left:0;right:0;bottom:0;z-index:1;padding:16px 18px;color:#fff;font-size:.9rem;font-weight:700}
+/* ── work carousel ── */
+.carousel{position:relative;max-width:940px;margin:0 auto}
+.carousel-viewport{
+  overflow:hidden;border-radius:var(--r-lg);box-shadow:var(--shadow);
+  background:var(--navy);touch-action:pan-y;cursor:grab;
+}
+.carousel-viewport.is-grabbing{cursor:grabbing}
+.carousel-track{
+  display:flex;margin:0;padding:0;list-style:none;
+  transition:transform .6s cubic-bezier(.4,0,.2,1);will-change:transform;
+}
+.carousel-track.no-anim{transition:none}
+.slide{position:relative;flex:0 0 100%;aspect-ratio:16/10}
+.slide img{width:100%;height:100%;object-fit:cover;display:block;-webkit-user-drag:none;user-select:none}
+.slide::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(4,52,95,.82))}
+.slide-cap{
+  position:absolute;left:0;right:0;bottom:0;z-index:1;padding:20px 22px;
+  color:#fff;font-size:1rem;font-weight:700;letter-spacing:-.01em;
+}
+.carousel-btn{
+  position:absolute;top:50%;transform:translateY(-50%);z-index:2;
+  width:44px;height:44px;border:0;border-radius:50%;
+  background:rgba(255,255,255,.94);box-shadow:0 6px 18px rgba(4,52,95,.28);
+  display:grid;place-items:center;cursor:pointer;transition:var(--t);
+}
+.carousel-btn:hover{background:#fff;transform:translateY(-50%) scale(1.06)}
+.carousel-btn svg{width:20px;height:20px;stroke:var(--blue);stroke-width:2.6;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.carousel-prev{left:14px}
+.carousel-next{right:14px}
+.carousel-dots{display:flex;justify-content:center;gap:8px;margin-top:16px}
+.carousel-dots button{
+  width:9px;height:9px;padding:0;border:0;border-radius:99px;background:var(--sky-200);
+  cursor:pointer;transition:var(--t);
+}
+.carousel-dots button:hover{background:var(--blue-300)}
+.carousel-dots button[aria-selected="true"]{background:var(--blue);width:26px}
 .gallery-note{margin-top:16px;font-size:.81rem;color:var(--slate-400);font-style:italic;text-align:center}
 
 /* ── financing calculator ── */
@@ -316,8 +345,6 @@ input[type=range]:focus-visible{box-shadow:0 0 0 3px rgba(124,180,224,.5)}
   .area-grid{grid-template-columns:1fr;gap:34px}
   .footer-grid{grid-template-columns:1fr 1fr;gap:28px}
   .trust-grid{grid-template-columns:repeat(2,1fr)}
-  .gallery{grid-template-columns:repeat(2,1fr)}
-  .shot-wide{grid-column:span 2}
 }
 @media (max-width:640px){
   html{scroll-padding-top:70px}
@@ -329,8 +356,9 @@ input[type=range]:focus-visible{box-shadow:0 0 0 3px rgba(124,180,224,.5)}
   .quote-card{padding:22px}
   .field-row{grid-template-columns:1fr}
   .svc-grid{grid-template-columns:1fr}
-  .gallery{grid-template-columns:1fr}
-  .shot,.shot-wide{grid-column:auto;aspect-ratio:3/2}
+  .slide{aspect-ratio:4/3}
+  .carousel-btn{width:38px;height:38px}
+  .carousel-prev{left:8px}.carousel-next{right:8px}
   .footer-grid{grid-template-columns:1fr}
   .mobile-bar{display:flex}
   body{padding-bottom:70px}

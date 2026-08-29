@@ -257,37 +257,50 @@
       <p class="eyebrow" data-en="Recent work" data-es="Trabajos recientes">Recent work</p>
       <h2 data-en="Yards around El Paso" data-es="Patios por todo El Paso">Yards around El Paso</h2>
     </div>
-    <div class="gallery">
-      <figure class="shot shot-wide">
-        <img src="assets/g1-backyard.jpg" width="1400" height="1050" loading="lazy"
-             alt="Backyard filled wall-to-wall with artificial turf, bordered by a stone wall">
-        <figcaption data-en="Full backyard turf" data-es="Patio completo con pasto">Full backyard turf</figcaption>
-      </figure>
-      <figure class="shot">
-        <img src="assets/g2-patio.jpg" width="1200" height="1600" loading="lazy"
-             alt="Covered patio with cedar tongue-and-groove ceiling and a ceiling fan">
-        <figcaption data-en="Covered patio + cedar ceiling" data-es="Patio cubierto + techo de cedro">Covered patio + cedar ceiling</figcaption>
-      </figure>
-      <figure class="shot">
-        <img src="assets/g3-sideyard.jpg" width="1200" height="1600" loading="lazy"
-             alt="Side yard with turf strip, gravel bed and a stacked-stone retaining wall">
-        <figcaption data-en="Side yard + retaining wall" data-es="Patio lateral + muro de contención">Side yard + retaining wall</figcaption>
-      </figure>
-      <figure class="shot">
-        <img src="assets/g4-design.jpg" width="1400" height="1050" loading="lazy"
-             alt="Geometric turf panels divided by paver and river-rock bands with a desert view">
-        <figcaption data-en="Turf + paver design" data-es="Diseño de pasto y adoquín">Turf + paver design</figcaption>
-      </figure>
-      <figure class="shot">
-        <img src="assets/g5-pergola.jpg" width="1400" height="1050" loading="lazy"
-             alt="Freestanding black gable pergola on a stamped concrete pad surrounded by turf">
-        <figcaption data-en="Steel gable pergola" data-es="Pérgola de acero a dos aguas">Steel gable pergola</figcaption>
-      </figure>
-      <figure class="shot">
-        <img src="assets/g6-under.jpg" width="1400" height="1050" loading="lazy"
-             alt="Underside of a black pergola over a stamped concrete floor with turf beyond">
-        <figcaption data-en="Stamped concrete under cover" data-es="Concreto estampado bajo techo">Stamped concrete under cover</figcaption>
-      </figure>
+    <div class="carousel" id="workCarousel" aria-roledescription="carousel" aria-label="Recent JADA projects">
+      <div class="carousel-viewport" id="carouselViewport">
+        <ul class="carousel-track" id="carouselTrack">
+          <li class="slide" aria-roledescription="slide">
+            <img src="assets/g1-backyard.jpg" width="1400" height="1050"
+                 alt="Backyard filled wall-to-wall with artificial turf, bordered by a stone wall">
+            <span class="slide-cap" data-en="Full backyard turf" data-es="Patio completo con pasto">Full backyard turf</span>
+          </li>
+          <li class="slide" aria-roledescription="slide">
+            <img src="assets/g2-patio.jpg" width="1200" height="1600" loading="lazy" style="object-position:center 32%"
+                 alt="Covered patio with cedar tongue-and-groove ceiling and a ceiling fan">
+            <span class="slide-cap" data-en="Covered patio + cedar ceiling" data-es="Patio cubierto + techo de cedro">Covered patio + cedar ceiling</span>
+          </li>
+          <li class="slide" aria-roledescription="slide">
+            <img src="assets/g3-sideyard.jpg" width="1200" height="1600" loading="lazy"
+                 alt="Side yard with turf strip, gravel bed and a stacked-stone retaining wall">
+            <span class="slide-cap" data-en="Side yard + retaining wall" data-es="Patio lateral + muro de contención">Side yard + retaining wall</span>
+          </li>
+          <li class="slide" aria-roledescription="slide">
+            <img src="assets/g4-design.jpg" width="1400" height="1050" loading="lazy"
+                 alt="Geometric turf panels divided by paver and river-rock bands with a desert view">
+            <span class="slide-cap" data-en="Turf + paver design" data-es="Diseño de pasto y adoquín">Turf + paver design</span>
+          </li>
+          <li class="slide" aria-roledescription="slide">
+            <img src="assets/g5-pergola.jpg" width="1400" height="1050" loading="lazy"
+                 alt="Freestanding black gable pergola on a stamped concrete pad surrounded by turf">
+            <span class="slide-cap" data-en="Steel gable pergola" data-es="Pérgola de acero a dos aguas">Steel gable pergola</span>
+          </li>
+          <li class="slide" aria-roledescription="slide">
+            <img src="assets/g6-under.jpg" width="1400" height="1050" loading="lazy"
+                 alt="Underside of a black pergola over a stamped concrete floor with turf beyond">
+            <span class="slide-cap" data-en="Stamped concrete under cover" data-es="Concreto estampado bajo techo">Stamped concrete under cover</span>
+          </li>
+        </ul>
+      </div>
+
+      <button class="carousel-btn carousel-prev" type="button" aria-label="Previous project" aria-controls="carouselTrack">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5 8 12l7 7"/></svg>
+      </button>
+      <button class="carousel-btn carousel-next" type="button" aria-label="Next project" aria-controls="carouselTrack">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+      </button>
+
+      <div class="carousel-dots" id="carouselDots" role="tablist" aria-label="Choose a project"></div>
     </div>
     <p class="gallery-note" data-en="Photos from recent JADA jobs."
                             data-es="Fotos de trabajos recientes de JADA.">Photos from recent JADA jobs.</p>
