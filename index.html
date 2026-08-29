@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>JADA Landscaping &amp; Construction | Backyard &amp; Front Yard Transformations in El Paso, TX</title>
+<meta name="description" content="Artificial turf, stamped concrete, pergolas and full yard remodels in El Paso. 4 years in business, A+ with the BBB, insured &amp; bonded. Free quote — call or text Daniel at (915) 218-1222.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ══ HEADER ══ -->
+<header class="site-header" id="top">
+  <div class="wrap header-inner">
+    <a class="brand" href="#top" aria-label="JADA Landscaping and Construction, home">
+      <svg class="brand-mark" viewBox="0 0 54 40" role="img" aria-hidden="true">
+        <path d="M4 4h9v18a8 8 0 0 1-8 8H2v-8h3a1 1 0 0 0 1-1V4Z" fill="#015198"/>
+        <path d="M50 4h-9v18a8 8 0 0 0 8 8h3v-8h-3a1 1 0 0 1-1-1V4Z" fill="#2E7CC5"/>
+        <path d="M19 30 27 8l8 22h-7l-1-4h-1l-1 4h-6Z" fill="#04345F"/>
+        <rect x="23" y="30" width="8" height="6" fill="#3A3A3A"/>
+      </svg>
+      <span class="brand-text">
+        <strong>JADA</strong>
+        <em data-en="Landscaping &amp; Construction" data-es="Paisajismo y Construcción">Landscaping &amp; Construction</em>
+      </span>
+    </a>
+
+    <nav class="site-nav" aria-label="Main">
+      <a href="#transformation" data-en="Before &amp; After" data-es="Antes y Después">Before &amp; After</a>
+      <a href="#services"       data-en="Services"        data-es="Servicios">Services</a>
+      <a href="#work"           data-en="Our Work"        data-es="Trabajos">Our Work</a>
+      <a href="#financing"      data-en="Financing"       data-es="Financiamiento">Financing</a>
+      <a href="#area"           data-en="Service Area"    data-es="Área de Servicio">Service Area</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="lang-toggle" id="langToggle" type="button" aria-label="Cambiar a español">
+        <span class="lang-on">EN</span><span class="lang-off">ES</span>
+      </button>
+      <a class="btn btn-call" href="sms:+19152181222">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H8l-4 4V5a1 1 0 0 1 1-1Z"/></svg>
+        <span data-en="Text Daniel" data-es="Texto a Daniel">Text Daniel</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- ══ HERO ══ -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow" data-en="El Paso, TX · 4 years in business · A+ with the BBB"
+                         data-es="El Paso, TX · 4 años de experiencia · A+ con el BBB">El Paso, TX · 4 years in business · A+ with the BBB</p>
+
+      <h1 data-en="Turn that dirt lot into the backyard you actually use."
+          data-es="Convierte ese lote de tierra en el patio que de verdad vas a usar.">Turn that dirt lot into the backyard you actually use.</h1>
+
+      <p class="hero-sub"
+         data-en="Artificial turf, stamped concrete, pergolas and full yard remodels — designed and built by one El Paso crew. Free quote, financing available."
+         data-es="Pasto sintético, concreto estampado, pérgolas y remodelaciones completas — diseñado y construido por un solo equipo de El Paso. Cotización gratis, financiamiento disponible.">
+         Artificial turf, stamped concrete, pergolas and full yard remodels — designed and built by one El Paso crew. Free quote, financing available.</p>
+    </div>
+
+    <!-- Lead capture card -->
+    <div class="quote-card" id="quote">
+      <div class="quote-head">
+        <h2 data-en="Get your free quote" data-es="Obtén tu cotización gratis">Get your free quote</h2>
+        <p data-en="Takes about a minute. Daniel usually replies within a few minutes."
+           data-es="Toma como un minuto. Daniel suele responder en unos minutos.">Takes about a minute. Daniel usually replies within a few minutes.</p>
+      </div>
+
+      <form id="quoteForm" novalidate>
+        <div class="field">
+          <label for="qName" data-en="Your name" data-es="Tu nombre">Your name</label>
+          <input id="qName" name="name" type="text" autocomplete="name" required>
+          <span class="err" data-en="Please enter your name" data-es="Por favor escribe tu nombre">Please enter your name</span>
+        </div>
+
+        <div class="field">
+          <label for="qPhone" data-en="Phone number" data-es="Número de teléfono">Phone number</label>
+          <input id="qPhone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="(915) 000-0000" required>
+          <span class="err" data-en="Please enter a valid phone number" data-es="Escribe un número de teléfono válido">Please enter a valid phone number</span>
+        </div>
+
+        <div class="field">
+          <label for="qProject" data-en="What do you want done?" data-es="¿Qué quieres hacer?">What do you want done?</label>
+          <select id="qProject" name="project" required>
+            <option value="" data-en="Select one…" data-es="Selecciona una…">Select one…</option>
+            <option value="turf"     data-en="Artificial turf"          data-es="Pasto sintético">Artificial turf</option>
+            <option value="remodel"  data-en="Full yard remodel"        data-es="Remodelación completa del patio">Full yard remodel</option>
+            <option value="concrete" data-en="Stamped concrete &amp; pavers" data-es="Concreto estampado y adoquines">Stamped concrete &amp; pavers</option>
+            <option value="pergola"  data-en="Pergola or gazebo"        data-es="Pérgola o gazebo">Pergola or gazebo</option>
+            <option value="wall"     data-en="Block or retaining wall"  data-es="Barda o muro de contención">Block or retaining wall</option>
+            <option value="rock"     data-en="Xeriscape &amp; decorative rock" data-es="Xeriscape y piedra decorativa">Xeriscape &amp; decorative rock</option>
+            <option value="unsure"   data-en="Not sure yet"             data-es="Todavía no estoy seguro">Not sure yet</option>
+          </select>
+          <span class="err" data-en="Please choose an option" data-es="Elige una opción">Please choose an option</span>
+        </div>
+
+        <div class="field-row">
+          <div class="field">
+            <label for="qArea" data-en="Which yard?" data-es="¿Cuál patio?">Which yard?</label>
+            <select id="qArea" name="area">
+              <option value=""     data-en="Select…"    data-es="Selecciona…">Select…</option>
+              <option value="front" data-en="Front yard" data-es="Patio de enfrente">Front yard</option>
+              <option value="back"  data-en="Backyard"   data-es="Patio de atrás">Backyard</option>
+              <option value="both"  data-en="Both"       data-es="Ambos">Both</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="qSize" data-en="Approx. size" data-es="Tamaño aprox.">Approx. size</label>
+            <select id="qSize" name="size">
+              <option value=""       data-en="Select…"              data-es="Selecciona…">Select…</option>
+              <option value="small"  data-en="Small (under 500 ft²)" data-es="Chico (menos de 500 ft²)">Small (under 500 ft²)</option>
+              <option value="medium" data-en="Medium (500–1,500 ft²)" data-es="Mediano (500–1,500 ft²)">Medium (500–1,500 ft²)</option>
+              <option value="large"  data-en="Large (1,500 ft²+)"     data-es="Grande (1,500 ft²+)">Large (1,500 ft²+)</option>
+              <option value="unsure" data-en="Not sure"              data-es="No estoy seguro">Not sure</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="field field-inline">
+          <input id="qSpanish" name="spanish" type="checkbox">
+          <label for="qSpanish" data-en="Contact me in Spanish" data-es="Contáctenme en español">Contact me in Spanish</label>
+        </div>
+
+        <button class="btn btn-primary btn-block" type="submit"
+                data-en="Request my free quote" data-es="Solicitar mi cotización gratis">Request my free quote</button>
+
+        <p class="form-foot">
+          <span data-en="Or text Daniel:" data-es="O envía un texto a Daniel:">Or text Daniel:</span>
+          <a href="sms:+19152181222">(915) 218-1222</a>
+        </p>
+      </form>
+
+      <div class="quote-success" id="quoteSuccess" hidden>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 13 4 4L19 7"/></svg>
+        <h3 data-en="Thanks — Daniel will reach out." data-es="Gracias — Daniel te contactará.">Thanks — Daniel will reach out.</h3>
+        <p data-en="Usually within a few minutes during the day. For a faster answer, text (915) 218-1222."
+           data-es="Normalmente en unos minutos durante el día. Para una respuesta más rápida, envía un texto al (915) 218-1222.">Usually within a few minutes during the day. For a faster answer, text (915) 218-1222.</p>
+        <p class="demo-note" data-en="Demo only — this form is not connected to email yet."
+                             data-es="Solo demostración — este formulario aún no está conectado.">Demo only — this form is not connected to email yet.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ TRUST BAR ══ -->
+<section class="trustbar" aria-label="Credentials">
+  <div class="wrap trust-grid">
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 1 0 9 9M12 7v5l3 3"/></svg>
+      <p><strong data-en="4 Years in Business" data-es="4 Años de Experiencia">4 Years in Business</strong>
+         <span data-en="Founded 2021 in El Paso" data-es="Fundada en 2021 en El Paso">Founded 2021 in El Paso</span></p>
+    </div>
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 15 9l7 .5-5.3 4.6 1.6 6.9L12 17.3 5.7 21l1.6-6.9L2 9.5 9 9l3-7Z"/></svg>
+      <p><strong data-en="A+ with the BBB" data-es="A+ con el BBB">A+ with the BBB</strong>
+         <span data-en="El Paso rating" data-es="Calificación de El Paso">El Paso rating</span></p>
+    </div>
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 3 6v6c0 5 3.8 9.2 9 10 5.2-.8 9-5 9-10V6l-9-4Z"/></svg>
+      <p><strong data-en="Insured &amp; Bonded" data-es="Asegurado y con Fianza">Insured &amp; Bonded</strong>
+         <span data-en="Licensed LLC" data-es="LLC con licencia">Licensed LLC</span></p>
+    </div>
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H8l-4 4V5a1 1 0 0 1 1-1Z"/></svg>
+      <p><strong data-en="Replies in Minutes" data-es="Responde en Minutos">Replies in Minutes</strong>
+         <span data-en="Call or text · Se habla español" data-es="Llama o texto · Se habla español">Call or text · Se habla español</span></p>
+    </div>
+  </div>
+</section>
+
+<!-- ══ BEFORE / AFTER SLIDER ══ -->
+<section class="section section-tint" id="transformation">
+  <div class="wrap">
+    <div class="section-head section-head-center">
+      <p class="eyebrow" data-en="Before &amp; after" data-es="Antes y después">Before &amp; after</p>
+      <h2 data-en="Same house. Same week." data-es="La misma casa. La misma semana.">Same house. Same week.</h2>
+      <p class="section-sub"
+         data-en="Drag the slider. Bare dirt to turf, stamped walkway and curb appeal — a real JADA front-yard job in El Paso."
+         data-es="Desliza el control. De tierra a pasto, andador estampado y presencia — un trabajo real de JADA en un patio de El Paso.">
+         Drag the slider. Bare dirt to turf, stamped walkway and curb appeal — a real JADA front-yard job in El Paso.</p>
+    </div>
+
+    <div class="ba" id="ba">
+      <img class="ba-img ba-after" src="assets/after.jpg" width="1500" height="1000"
+           alt="Finished front yard with artificial turf, stamped concrete walkway and a palm tree">
+      <img class="ba-img ba-before" src="assets/before.jpg" width="1500" height="1000"
+           alt="Same front yard before: bare dirt where the lawn will go, walkway forms poured">
+      <div class="ba-divider" id="baDivider" aria-hidden="true">
+        <span class="ba-knob">
+          <svg viewBox="0 0 24 24"><path d="M9 6 4 12l5 6M15 6l5 6-5 6"/></svg>
+        </span>
+      </div>
+      <span class="ba-tag ba-tag-l" data-en="Before" data-es="Antes">Before</span>
+      <span class="ba-tag ba-tag-r" data-en="After" data-es="Después">After</span>
+      <input type="range" class="ba-range" id="baRange" min="0" max="100" value="50"
+             aria-label="Drag to compare before and after">
+    </div>
+
+    <div class="cta-row cta-row-center">
+      <a class="btn btn-primary" href="#quote" data-en="Get a quote for my yard" data-es="Quiero una cotización para mi patio">Get a quote for my yard</a>
+      <a class="btn btn-ghost" href="tel:+19152181222" data-en="Call (915) 218-1222" data-es="Llama al (915) 218-1222">Call (915) 218-1222</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ SERVICES ══ -->
+<section class="section" id="services">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow" data-en="What we build" data-es="Lo que construimos">What we build</p>
+      <h2 data-en="One crew for the whole yard" data-es="Un solo equipo para todo el patio">One crew for the whole yard</h2>
+    </div>
+
+    <ul class="svc-grid">
+      <li class="svc">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 18c3-2 6-2 9 0s6 2 9 0M3 13c3-2 6-2 9 0s6 2 9 0M12 3v8"/></svg>
+        <h3 data-en="Artificial turf" data-es="Pasto sintético">Artificial turf</h3>
+      </li>
+      <li class="svc">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 20 12 4l9 16M8 20l4-7 4 7"/></svg>
+        <h3 data-en="Full yard remodels" data-es="Remodelaciones completas">Full yard remodels</h3>
+      </li>
+      <li class="svc">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v12H3zM3 12h18M9 6v12M15 6v12"/></svg>
+        <h3 data-en="Stamped concrete &amp; pavers" data-es="Concreto estampado y adoquines">Stamped concrete &amp; pavers</h3>
+      </li>
+      <li class="svc">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 21V7l8-4 8 4v14M4 9h16M9 21v-6h6v6"/></svg>
+        <h3 data-en="Pergolas &amp; gazebos" data-es="Pérgolas y gazebos">Pergolas &amp; gazebos</h3>
+      </li>
+      <li class="svc">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h5V4h8v4h5M3 8v4h18V8M3 16h7v-4M14 12v4h7"/></svg>
+        <h3 data-en="Block &amp; retaining walls" data-es="Bardas y muros de contención">Block &amp; retaining walls</h3>
+      </li>
+      <li class="svc">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="7" cy="15" r="3"/><circle cx="15" cy="9" r="2.5"/><circle cx="17" cy="16" r="2"/></svg>
+        <h3 data-en="Xeriscape &amp; rock" data-es="Xeriscape y piedra">Xeriscape &amp; rock</h3>
+      </li>
+    </ul>
+    <p class="svc-note" data-en="Also: drainage, irrigation, putting greens, and skid-steer work through JADA Skid Steer Rental."
+                        data-es="También: drenaje, riego, putting greens y trabajo con skid steer a través de JADA Skid Steer Rental.">Also: drainage, irrigation, putting greens, and skid-steer work through JADA Skid Steer Rental.</p>
+  </div>
+</section>
+
+<!-- ══ WORK GALLERY ══ -->
+<section class="section section-tint" id="work">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow" data-en="Recent work" data-es="Trabajos recientes">Recent work</p>
+      <h2 data-en="Yards around El Paso" data-es="Patios por todo El Paso">Yards around El Paso</h2>
+    </div>
+    <div class="gallery">
+      <figure class="shot shot-wide">
+        <img src="assets/g1-backyard.jpg" width="1400" height="1050" loading="lazy"
+             alt="Backyard filled wall-to-wall with artificial turf, bordered by a stone wall">
+        <figcaption data-en="Full backyard turf" data-es="Patio completo con pasto">Full backyard turf</figcaption>
+      </figure>
+      <figure class="shot">
+        <img src="assets/g2-patio.jpg" width="1200" height="1600" loading="lazy"
+             alt="Covered patio with cedar tongue-and-groove ceiling and a ceiling fan">
+        <figcaption data-en="Covered patio + cedar ceiling" data-es="Patio cubierto + techo de cedro">Covered patio + cedar ceiling</figcaption>
+      </figure>
+      <figure class="shot">
+        <img src="assets/g3-sideyard.jpg" width="1200" height="1600" loading="lazy"
+             alt="Side yard with turf strip, gravel bed and a stacked-stone retaining wall">
+        <figcaption data-en="Side yard + retaining wall" data-es="Patio lateral + muro de contención">Side yard + retaining wall</figcaption>
+      </figure>
+      <figure class="shot">
+        <img src="assets/g4-design.jpg" width="1400" height="1050" loading="lazy"
+             alt="Geometric turf panels divided by paver and river-rock bands with a desert view">
+        <figcaption data-en="Turf + paver design" data-es="Diseño de pasto y adoquín">Turf + paver design</figcaption>
+      </figure>
+      <figure class="shot">
+        <img src="assets/g5-pergola.jpg" width="1400" height="1050" loading="lazy"
+             alt="Freestanding black gable pergola on a stamped concrete pad surrounded by turf">
+        <figcaption data-en="Steel gable pergola" data-es="Pérgola de acero a dos aguas">Steel gable pergola</figcaption>
+      </figure>
+      <figure class="shot">
+        <img src="assets/g6-under.jpg" width="1400" height="1050" loading="lazy"
+             alt="Underside of a black pergola over a stamped concrete floor with turf beyond">
+        <figcaption data-en="Stamped concrete under cover" data-es="Concreto estampado bajo techo">Stamped concrete under cover</figcaption>
+      </figure>
+    </div>
+    <p class="gallery-note" data-en="Photos from recent JADA jobs."
+                            data-es="Fotos de trabajos recientes de JADA.">Photos from recent JADA jobs.</p>
+  </div>
+</section>
+
+<!-- ══ FINANCING ══ -->
+<section class="section section-dark" id="financing">
+  <div class="wrap">
+    <div class="section-head section-head-light">
+      <p class="eyebrow" data-en="Financing" data-es="Financiamiento">Financing</p>
+      <h2 data-en="Build it now, pay monthly" data-es="Constrúyelo ahora, paga por mes">Build it now, pay monthly</h2>
+      <p class="section-sub"
+         data-en="Most full-yard projects are financed. Slide to see a rough monthly payment."
+         data-es="La mayoría de los proyectos grandes se financian. Desliza para ver un pago mensual aproximado.">
+         Most full-yard projects are financed. Slide to see a rough monthly payment.</p>
+    </div>
+
+    <div class="calc">
+      <div class="calc-control">
+        <div class="calc-row">
+          <label for="calcAmount" data-en="Project cost" data-es="Costo del proyecto">Project cost</label>
+          <output id="calcAmount-out" for="calcAmount">$12,000</output>
+        </div>
+        <input type="range" id="calcAmount" min="3000" max="45000" step="500" value="12000"
+               aria-describedby="calcDisclaimer">
+        <div class="calc-scale"><span>$3,000</span><span>$45,000</span></div>
+
+        <div class="calc-row calc-row-term">
+          <label for="calcTerm" data-en="Term" data-es="Plazo">Term</label>
+          <div class="term-opts" id="calcTerm" role="radiogroup" aria-label="Financing term">
+            <button type="button" class="term-opt" data-months="36"  role="radio" aria-checked="false">3 <span data-en="yr" data-es="años">yr</span></button>
+            <button type="button" class="term-opt is-on" data-months="60" role="radio" aria-checked="true">5 <span data-en="yr" data-es="años">yr</span></button>
+            <button type="button" class="term-opt" data-months="120" role="radio" aria-checked="false">10 <span data-en="yr" data-es="años">yr</span></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="calc-result">
+        <p class="calc-label" data-en="Estimated monthly payment" data-es="Pago mensual estimado">Estimated monthly payment</p>
+        <p class="calc-figure"><span class="calc-cur">$</span><span id="calcMonthly">255</span><span class="calc-per" data-en="/mo" data-es="/mes">/mo</span></p>
+        <p class="calc-meta">
+          <span id="calcApr">9.99% APR</span> ·
+          <span id="calcTermLabel">60 <span data-en="months" data-es="meses">months</span></span>
+        </p>
+        <a class="btn btn-primary btn-block" href="#quote"
+           data-en="Ask about financing" data-es="Pregunta por el financiamiento">Ask about financing</a>
+      </div>
+    </div>
+
+    <p class="disclaimer" id="calcDisclaimer"
+       data-en="Illustrative estimate only. Actual rate, term and payment are set by the lender and depend on credit approval. Not an offer of credit."
+       data-es="Estimado ilustrativo únicamente. La tasa, el plazo y el pago los determina el prestamista y dependen de la aprobación de crédito. No es una oferta de crédito.">
+       Illustrative estimate only. Actual rate, term and payment are set by the lender and depend on credit approval. Not an offer of credit.</p>
+  </div>
+</section>
+
+<!-- ══ SERVICE AREA ══ -->
+<section class="section" id="area">
+  <div class="wrap area-grid">
+    <div>
+      <p class="eyebrow" data-en="Service area" data-es="Área de servicio">Service area</p>
+      <h2 data-en="All of El Paso &amp; the Lower Valley" data-es="Todo El Paso y el Lower Valley">All of El Paso &amp; the Lower Valley</h2>
+      <ul class="area-list">
+        <li>El Paso</li><li>Horizon City</li><li>Socorro</li><li>Clint</li>
+        <li>San Elizario</li><li>Fabens</li><li>Canutillo</li><li>Vinton</li>
+        <li>Sunland Park, NM</li><li>Santa Teresa, NM</li>
+      </ul>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#quote" data-en="Request a quote" data-es="Solicitar cotización">Request a quote</a>
+      </div>
+    </div>
+    <div class="map-card" aria-hidden="true">
+      <svg viewBox="0 0 400 320" class="map-svg">
+        <rect width="400" height="320" rx="14" fill="#E9F1F8"/>
+        <path d="M40 250 L120 120 L200 150 L260 90 L360 130" fill="none" stroke="#CBDFF0" stroke-width="12" stroke-linecap="round"/>
+        <path d="M0 205 L400 175" fill="none" stroke="#CBDFF0" stroke-width="8"/>
+        <circle cx="185" cy="160" r="46" fill="#015198" opacity=".12"/>
+        <circle cx="185" cy="160" r="28" fill="#015198" opacity=".18"/>
+        <circle cx="185" cy="160" r="8" fill="#015198"/>
+        <text x="185" y="198" text-anchor="middle" font-size="14" font-weight="700" fill="#04345F">El Paso</text>
+        <circle cx="120" cy="220" r="5" fill="#3E9B48"/><text x="120" y="239" text-anchor="middle" font-size="11" fill="#3B5570">Socorro</text>
+        <circle cx="300" cy="118" r="5" fill="#3E9B48"/><text x="300" y="106" text-anchor="middle" font-size="11" fill="#3B5570">Canutillo</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FINAL CTA ══ -->
+<section class="finalcta">
+  <div class="wrap finalcta-inner">
+    <h2 data-en="Send Daniel a photo of your yard."
+        data-es="Mándale a Daniel una foto de tu patio.">Send Daniel a photo of your yard.</h2>
+    <p data-en="Free quote, no pressure, and a straight answer on what it takes."
+       data-es="Cotización gratis, sin presión y una respuesta honesta de lo que se necesita.">Free quote, no pressure, and a straight answer on what it takes.</p>
+    <div class="cta-row cta-row-center">
+      <a class="btn btn-primary btn-lg" href="#quote" data-en="Request my free quote" data-es="Solicitar mi cotización gratis">Request my free quote</a>
+      <a class="btn btn-ghost btn-lg" href="sms:+19152181222" data-en="Text (915) 218-1222" data-es="Texto al (915) 218-1222">Text (915) 218-1222</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ══ FOOTER ══ -->
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <div class="brand brand-footer">
+        <svg class="brand-mark" viewBox="0 0 54 40" role="img" aria-hidden="true">
+          <path d="M4 4h9v18a8 8 0 0 1-8 8H2v-8h3a1 1 0 0 0 1-1V4Z" fill="#2E7CC5"/>
+          <path d="M50 4h-9v18a8 8 0 0 0 8 8h3v-8h-3a1 1 0 0 1-1-1V4Z" fill="#5FA8DB"/>
+          <path d="M19 30 27 8l8 22h-7l-1-4h-1l-1 4h-6Z" fill="#fff"/>
+          <rect x="23" y="30" width="8" height="6" fill="#9FC4DE"/>
+        </svg>
+        <span class="brand-text"><strong>JADA</strong><em>Landscaping &amp; Construction</em></span>
+      </div>
+      <p class="foot-note">
+        <span data-en="Landscaping &amp; construction, El Paso TX" data-es="Paisajismo y construcción, El Paso TX">Landscaping &amp; construction, El Paso TX</span><br>
+        <span data-en="Insured &amp; bonded · 4 yrs · A+ BBB" data-es="Asegurado y con fianza · 4 años · A+ BBB">Insured &amp; bonded · 4 yrs · A+ BBB</span>
+      </p>
+    </div>
+
+    <div>
+      <h4 data-en="Contact" data-es="Contacto">Contact</h4>
+      <p>
+        <a href="tel:+19152181222">Call (915) 218-1222</a><br>
+        <a href="sms:+19152181222" data-en="Text (915) 218-1222" data-es="Texto (915) 218-1222">Text (915) 218-1222</a><br>
+        El Paso, TX 79928
+      </p>
+    </div>
+
+    <div>
+      <h4 data-en="See more work" data-es="Ver más trabajos">See more work</h4>
+      <p>
+        <a href="https://www.instagram.com/jadalandscaping_/" target="_blank" rel="noopener">Instagram</a><br>
+        <a href="https://www.facebook.com/JADALANDSCAPE/" target="_blank" rel="noopener">Facebook</a><br>
+        <a href="https://www.tiktok.com/@jada.landscape" target="_blank" rel="noopener">TikTok</a>
+      </p>
+    </div>
+
+    <div>
+      <h4 data-en="Hours" data-es="Horario">Hours</h4>
+      <p><span data-en="Mon – Sat" data-es="Lun – Sáb">Mon – Sat</span><br>
+         <span data-en="Free estimates" data-es="Estimados gratis">Free estimates</span><br>
+         <span class="demo-inline" data-en="(confirm hours)" data-es="(confirmar horario)">(confirm hours)</span></p>
+    </div>
+  </div>
+
+  <div class="wrap footer-base">
+    <p>© <span id="yr">2026</span> JADA Landscaping &amp; Construction LLC · El Paso, TX</p>
+    <p class="spec-note" data-en="Concept site prepared for JADA — not an official page."
+                         data-es="Sitio conceptual preparado para JADA — no es una página oficial.">Concept site prepared for JADA — not an official page.</p>
+  </div>
+</footer>
+
+<!-- ══ STICKY MOBILE BAR ══ -->
+<div class="mobile-bar">
+  <a class="btn btn-ghost mb-btn" href="#quote" data-en="Quote" data-es="Cotizar">Quote</a>
+  <a class="btn btn-ghost mb-btn" href="sms:+19152181222" data-en="Text" data-es="Texto">Text</a>
+  <a class="btn btn-primary mb-btn" href="tel:+19152181222">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.2.4 2.4.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1l-2.3 2.2Z"/></svg>
+    <span data-en="Call" data-es="Llamar">Call</span>
+  </a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
